@@ -18,6 +18,12 @@ import Spinner from "../Spinner/Spinner";
 
 function CardSummary({ isValid, envio, subTotal }) {
   const { loading } = useSelector((state) => state.orders);
+  const { cartItems } = useSelector((state) => state.cart);
+
+  let botondisable = true;
+  if (cartItems.length > 0 && isValid === false) {
+    botondisable = false
+  };
 
   return (
     <CardContainer>
@@ -42,7 +48,7 @@ function CardSummary({ isValid, envio, subTotal }) {
                 <h4>Total:</h4>
                 <h4>{formatPrice(envio + subTotal)}</h4>
               </TotalCard>
-              <Botoncito w="100%" m="10px" disabled={isValid}>
+              <Botoncito w="100%" m="10px" disabled={botondisable}>
                 Pagar
               </Botoncito>
             </>

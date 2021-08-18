@@ -46,6 +46,7 @@ function CheckoutForm() {
       return;
     }
 
+
     const orderData = {
       userId: currentUser.id,
       shippingDetails: {
@@ -66,9 +67,16 @@ function CheckoutForm() {
 
     if (purchased) {
       dispatch(orderActions.purchaseInit());
-      history.push("/mis-ordenes");
+      history.push("/mis-ordenes"); 
     }
 
+    let botondisable = true;
+    if (cartItems.length > 0) {
+      botondisable = false
+    };
+
+    
+    
   return (
     <FormStyled onSubmit={handleSubmit}>
       <FormSectionStyled>

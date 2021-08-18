@@ -4,13 +4,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 var firebaseConfig = {
-    apiKey: "AIzaSyAky7IOdwEPoS5SZ0FzsVWn3XaiFIk5ehw",
-    authDomain: "mercadopokemon-c2847.firebaseapp.com",
-    projectId: "mercadopokemon-c2847",
-    storageBucket: "mercadopokemon-c2847.appspot.com",
-    messagingSenderId: "657828124258",
-    appId: "1:657828124258:web:ee5131c7ab3d3abaf9233b"
-  };
+  apiKey: "AIzaSyDBNcNoMBCs5XbN_AhDulQTFpdIVrnrDC4",
+  authDomain: "pokemon-beb33.firebaseapp.com",
+  projectId: "pokemon-beb33",
+  storageBucket: "pokemon-beb33.appspot.com",
+  messagingSenderId: "356940670500",
+  appId: "1:356940670500:web:400777e11c9e2e9de59ab1"
+};
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;

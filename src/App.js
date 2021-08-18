@@ -9,10 +9,12 @@ import { useOpenPok } from "./hooks/useOpenPok.js";
 import Orders from "./components/Orders/Orders";
 import Checkout from "./pages/Checkout.js";
 import Login from "./pages/Login";
+import Resume from "./pages/Resume";
 import { useEffect } from "react";
 import * as userActions from "./redux/user/userActions";
 import { auth, createUserProfileDocument } from "./firebase/firebase.util";
 import { useDispatch } from "react-redux";
+import OrdenesPagadas from "./pages/OrdenesPagadas";
 
 function onAuthStateChange(cb, action) {
   auth.onAuthStateChanged(async (userAuth) => {
@@ -68,6 +70,15 @@ function App() {
 
         <Route exact path="/login">
           <Login />
+        </Route>
+        
+        <Route exact path="/mis-ordenes">
+          <OrdenesPagadas/>
+        </Route>
+
+        
+        <Route exact path="/mis-ordenes/:manuelitaviviaenpehuajo">
+          <Resume />
         </Route>
 
       </Switch>

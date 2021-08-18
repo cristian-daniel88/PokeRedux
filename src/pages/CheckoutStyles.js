@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CheckoutContainerStyled = styled.div`
-  width: 100vw;
+ 
   height: auto;
   display: flex;
   justify-content: center;
