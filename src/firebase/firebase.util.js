@@ -3,13 +3,13 @@ import firebase from "firebase";
 import "firebase/firestore";
 import "firebase/auth";
 
-var firebaseConfig = {
-  apiKey: "AIzaSyDBNcNoMBCs5XbN_AhDulQTFpdIVrnrDC4",
-  authDomain: "pokemon-beb33.firebaseapp.com",
-  projectId: "pokemon-beb33",
-  storageBucket: "pokemon-beb33.appspot.com",
-  messagingSenderId: "356940670500",
-  appId: "1:356940670500:web:400777e11c9e2e9de59ab1"
+const firebaseConfig = {
+  apiKey: "AIzaSyDC7sINXR1K396UYqPrOuadKfW-qKNe_z8",
+  authDomain: "pokemon-a3d4e.firebaseapp.com",
+  projectId: "pokemon-a3d4e",
+  storageBucket: "pokemon-a3d4e.appspot.com",
+  messagingSenderId: "919518752265",
+  appId: "1:919518752265:web:5b5ac174f960aeb1cb92d8"
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
