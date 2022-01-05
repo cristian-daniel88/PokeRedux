@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { UserMenu } from "../UserMenu/UserMenu";
 import * as userActions from "../../redux/user/userActions";
-import * as cartActions from "../../redux/cart/cartActions";
+
 
 function NavBar({openPok}) {
   const dispatch = useDispatch()

@@ -13,7 +13,7 @@ import {
 } from "./LoginStyles";
 
 import {
-  BannerStyled,
+  
   Support
 
 } from "../components/Banner/BannerStyles";

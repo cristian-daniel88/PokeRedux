@@ -3,7 +3,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 import * as cartActions from "../../redux/cart/cartActions";
-import { useHistory, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 import {
   QuantityButton,
@@ -14,7 +14,7 @@ import {
 
 function HandleQuantity({ item }) {
   const dispatch = useDispatch();
-  const history = useHistory();
+  
 
   const handleRemove = () => {
   

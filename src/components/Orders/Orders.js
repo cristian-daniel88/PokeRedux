@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import * as cartActions from "../../redux/cart/cartActions";
 import { formatPrice } from "../../utils/formatPrice";
 import HandleQuantity from "./HandleQuantity";
-import { Link, useHistory } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 
 function Orders() {
   const dispatch = useDispatch();

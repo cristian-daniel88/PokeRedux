@@ -8,7 +8,7 @@ import {
   Dialog,
   DialogBanner,
   DialogBannerName,
-  DialogContent,
+ 
   DialogFooter,
   ConfirmButton,
 } from "./PokDialogStyles";

@@ -1,7 +1,7 @@
 import React from "react";
 import useForm from "../../hooks/useForm";
 import { Input } from "../Input/Input";
-import { VALIDATOR_REQUIRE, VALIDATOR_EMAIL } from "../../utils/validator";
+import { VALIDATOR_REQUIRE} from "../../utils/validator";
 import { COSTO_ENVIO } from "../../utils/constants";
 import { useHistory } from "react-router-dom";
 import { FormStyled, FormSectionStyled, FormTitle } from "./CheckoutFormStyles";
@@ -13,7 +13,7 @@ import CardSummary from "../CardSummary/CardSummary";
 
 function CheckoutForm() {
   const currentUser = useSelector((state) => state.user.currentUser);
-  const { purchased, loading } = useSelector((state) => state.orders);
+  const { purchased } = useSelector((state) => state.orders);
   const { cartItems } = useSelector((state) => state.cart);
 
   const dispatch = useDispatch();
@@ -70,11 +70,12 @@ function CheckoutForm() {
       history.push("/mis-ordenes"); 
     }
 
-    let botondisable = true;
-    if (cartItems.length > 0) {
-      botondisable = false
-    };
+    // let botondisable = true;
+    // if (cartItems.length > 0) {
+    //   botondisable = false
+    // };
 
+    
     
     
   return (
